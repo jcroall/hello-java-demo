@@ -51,4 +51,4 @@ jobs:
           BRIDGE_coverity_connect_user_name: ${{ secrets.COVERITY_USER }}
           BRIDGE_coverity_connect_user_password: ${{ secrets.COVERITY_PASSPHRASE }}
           BRIDGE_coverity_connect_project_name: ${{ github.event.repository.name }}
-          BRIDGE_coverity_connect_stream_name: ${{ environment.GITHUB_REF_NAME }}
+          BRIDGE_coverity_connect_stream_name: ${{ env.GITHUB_REF_NAME }}
