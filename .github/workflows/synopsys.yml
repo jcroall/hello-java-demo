@@ -41,7 +41,7 @@ jobs:
       - name: Synopsys Application Security Testing
         uses: synopsys-sig/synopsys-action@main
         with:
-          bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
+          bridge_download_url: ${{ env.MAC_BRIDGE_URL }}
         env:
           BRIDGE_coverity_connect_url: ${{ secrets.COVERITY_URL }}
           BRIDGE_coverity_connect_user_name: ${{ secrets.COVERITY_USER }}
