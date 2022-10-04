@@ -44,13 +44,15 @@ jobs:
           polaris_application_name: "jc-hello-java-demo"
           polaris_project_name: "jc-hello-java-demo"
           polaris_assessment_types: '["SAST", "SCA"]'
-          bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
+
           #blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           #blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
+
           #coverity_url: ${{ secrets.COVERITY_URL }}
           #coverity_user: ${{ secrets.COVERITY_USER }}
           #coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
           #coverity_project_name: ${{ github.event.repository.name }}
           #coverity_stream_name: ${{ github.event.repository.name }}-${{ github.head_ref || github.ref_name }}
+
           synopsys_bridge_path: /tmp/synopsys-bridge
           bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
