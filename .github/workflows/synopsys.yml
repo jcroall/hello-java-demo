@@ -20,7 +20,7 @@ jobs:
 
     env:
       SYNOPSYS_BRIDGE_VERSION: 0.1.97
-      LINUX_BRIDGE_URL: 'https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/polaris-ci/${{ env.SYNOPSYS_BRIDGE_VERSION }}/polaris-ci-${{ env.SYNOPSYS_BRIDGE_VERSION }}-linux64.zip'
+      LINUX_BRIDGE_URL: 'https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/polaris-ci/0.1.97/polaris-ci-0.1.97-linux64.zip'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
