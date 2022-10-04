@@ -57,3 +57,4 @@ jobs:
 
           synopsys_bridge_path: /tmp/synopsys-bridge
           bridge_download_url: ${{ env.MACOSX_BRIDGE_URL }}
+
