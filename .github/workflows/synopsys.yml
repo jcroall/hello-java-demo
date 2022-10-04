@@ -19,8 +19,7 @@ jobs:
     runs-on: [self-hosted]
 
     env:
-      SYNOPSYS_BRIDGE_VERSION: 0.1.97
-      LINUX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/bridge/0.1.794/bridge-0.1.794-linux64.zip"
+      LINUX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-action/0.1.56/ci-package-0.1.56-linux64.zip"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
