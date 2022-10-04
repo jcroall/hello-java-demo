@@ -38,7 +38,7 @@ jobs:
     #       bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
 
       - name: Synopsys Application Security Testing
-        uses: synopsys-sig/synopsys-action@main
+        uses: jcroall/synopsys-action@jc-multi-product
         with:
           #polaris_serverUrl: ${{ secrets.POLARIS_URL }}
           #polaris_accessToken: ${{ secrets.POLARIS_ACCESS_TOKEN }}
@@ -46,8 +46,8 @@ jobs:
           #polaris_project_name: "jc-hello-java-demo"
           #polaris_assessment_types: '["SAST", "SCA"]'
 
-          #blackduck_url: ${{ secrets.BLACKDUCK_URL }}
-          #blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
+          blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
 
           coverity_url: ${{ secrets.COVERITY_URL }}
           coverity_user: ${{ secrets.COVERITY_USER }}
