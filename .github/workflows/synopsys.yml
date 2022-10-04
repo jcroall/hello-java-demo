@@ -19,9 +19,8 @@ jobs:
     runs-on: [self-hosted]
 
     env:
-      MAC_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/polaris-ci/0.1.60/polaris-ci-0.1.60-macosx.zip"
-      LINUX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/polaris-ci/0.1.60/polaris-ci-0.1.60-linux64.zip"
-      WINDOWS_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/polaris-ci/0.1.60/polaris-ci-0.1.60-win64.zip"
+      SYNOPSYS_BRIDGE_VERSION: 0.1.97
+      LINUX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/polaris-ci/${{ env.SYNOPSYS_BRIDGE_VERSION }}/polaris-ci-${{ env.SYNOPSYS_BRIDGE_VERSION}}-linux64.zip"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -39,7 +38,7 @@ jobs:
     #       bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
 
       - name: Synopsys Application Security Testing
-        uses: jcroall/synopsys-action@jc-test
+        uses: synopsys-sig/synopsys-action@main
         with:
           coverity_url: ${{ secrets.COVERITY_URL }}
           coverity_user: ${{ secrets.COVERITY_USER }}
