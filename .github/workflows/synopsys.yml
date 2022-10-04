@@ -40,7 +40,7 @@ jobs:
         uses: synopsys-sig/synopsys-action@main
         with:
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
-          blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
+          blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
           #coverity_url: ${{ secrets.COVERITY_URL }}
           #coverity_user: ${{ secrets.COVERITY_USER }}
           #coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
