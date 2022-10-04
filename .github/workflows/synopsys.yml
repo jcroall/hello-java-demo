@@ -19,8 +19,8 @@ jobs:
     runs-on: [self-hosted]
 
     env:
-      LINUX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-action/0.1.56/ci-package-0.1.56-linux64.zip"
-      MACOSX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-action/0.1.56/ci-package-0.1.56-macosx.zip"
+      LINUX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-action/0.1.60/ci-package-0.1.60-linux64.zip"
+      MACOSX_BRIDGE_URL: "https://artifactory.internal.synopsys.com/artifactory/clops-local/clops.sig.synopsys.com/synopsys-action/0.1.60/ci-package-0.1.60-macosx.zip"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
