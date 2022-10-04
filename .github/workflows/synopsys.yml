@@ -39,8 +39,14 @@ jobs:
       - name: Synopsys Application Security Testing
         uses: synopsys-sig/synopsys-action@main
         with:
-          blackduck_url: ${{ secrets.BLACKDUCK_URL }}
-          blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
+          polaris_serverUrl: ${{ secrets.POLARIS_URL }}
+          polaris_accessToken: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          polaris_application_name: "jc-hello-java-demo"
+          polaris_project_name: "jc-hello-java-demo"
+          polaris_assessment_types: '["SAST", "SCA"]'
+          bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
+          #blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          #blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
           #coverity_url: ${{ secrets.COVERITY_URL }}
           #coverity_user: ${{ secrets.COVERITY_USER }}
           #coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
